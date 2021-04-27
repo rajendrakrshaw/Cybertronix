@@ -14,3 +14,39 @@ h1{
     font-size: 50px;
     text-align: center;
 }
+
+
+/* Our Team Section  */
+
+.ContainerOfMembers{
+    border: 2px solid yellow;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MemberBox{
+    border: 2px solid cyan;
+    width: 25%;
+}
+.MemberImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+.MemberImage img{
+    border-radius: 50%;
+}
+.MemberName{
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
+}
+.MemberPost{
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
+}
+
+/* Contact Us Section  */
