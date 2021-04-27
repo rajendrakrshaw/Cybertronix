@@ -1,0 +1,16 @@
+*{
+    top: 0px;
+    left: 0px;
+}
+body{
+    background-color: black;
+}
+section{
+    height: 1000px;
+    border: 2px solid red;
+}
+h1{
+    color: Red;
+    font-size: 50px;
+    text-align: center;
+}
