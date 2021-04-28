@@ -6,7 +6,8 @@ body{
     background-color: black;
 }
 section{
-    height: 1200px;
+    height:1500px;
+
     border: 2px solid red;
 }
 h1{
@@ -47,7 +48,7 @@ h1{
 }
 .MemberImage img{
     border-radius: 50%;
-    width: 50%;
+    /* width: 50%; */
 }
 .MemberName{
     text-align: center;
