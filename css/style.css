@@ -16,10 +16,57 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+/*Home*/
+/*navbar*/
+#logo {
+    margin: 0px 4px;
+    padding: 0px 4px;
+    
+}
+#logo img {
+    height: 50px;
+    margin: 1px 10px;
+    border: 1px solid rgb(71, 70, 70);
+    border-radius: 50%;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: red ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.20;
+    z-index: -1;
+}
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+#navbar ul li a{
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 20px;
+    padding: 2px 14px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
 section{
     height:1500px;
 
-    border: 2px solid red;
 }
 ::placeholder {
     color:white;
