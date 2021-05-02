@@ -37,8 +37,8 @@ body::before{
     
 }
 #logo img {
-    height: 50px;
-    margin: 1px 10px;
+    height: 60px;
+    margin: 0px;
     border: 1px solid rgb(71, 70, 70);
     border-radius: 50%;
 }
@@ -48,6 +48,12 @@ body::before{
     position: relative;
     top: 0px;
     left: 0px;
+}
+#navbar p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    margin: 0px 182px 0px 4px;
 }
 #navbar::before{
     content: "";
@@ -67,7 +73,7 @@ body::before{
     display: block;
     color: white;
     font-size: 1.2rem;
-    margin: 10px 20px;
+    margin: 21px 20px 1px 38px;
     padding: 2px 14px;
     border: 2px solid transparent;
     text-decoration: none;
