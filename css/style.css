@@ -170,7 +170,7 @@ h1{
 /* Our Team Section  */
 .OurTeam{
     background: #88888899;
-    box-shadow: 0px 25px #73737396;
+    box-shadow: 12px 12px 25px 25px rgba(56, 7, 7, 0.808);
     margin-bottom: 25px;
 }
 .OurTeam h1{
@@ -178,19 +178,25 @@ h1{
     font-family: 'UnifrakturCook', cursive;
 }
 .ContainerOfLeaders{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     color: red;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
     flex-flow: wrap;
+    padding-top: 1%;
 }
 .MemberBox{
-    border: 2px solid cyan;
+    /* border: 2px solid cyan; */
     width: 20%;
-    margin: 4px;
+    margin: 1% 4px;
     padding: 0%;
+}
+.MemberBox:hover{
+    box-shadow: 0 0 20px 1px rgb(92, 89, 89);
+    box-shadow: 0 0 25px 1px rgba(56, 7, 7, 0.808);
+    /* background-color:rgba(24, 1, 1, 0.418) ; */
 }
 .MemberImage{
     display: flex;
@@ -200,28 +206,47 @@ h1{
 }
 .MemberImage img{
     border-radius: 50%;
-    /* width: 50%; */
+    width: 50%;
+}
+.MemberImage img:hover{
+    box-shadow: 0 0 25px 1px rgba(56, 7, 7, 0.808);
+    box-shadow: 0 0 25px 1px black
 }
 .MemberName{
     text-align: center;
     margin: 2%;
     padding: 2%;
-    font-family: 'Jacques Francois Shadow', cursive;
     font-size: 1rem;
+    color: white;
+    font-family: 'Vast', cursive;
+}
+.MemberName:hover{
+    box-shadow: 0 0 25px 1px rgba(56, 7, 7, 0.808);
 }
 .MemberPost{
     text-align: center;
     margin: 2%;
     padding: 2%;
 }
+.MemberPost:hover{
+    box-shadow: 0 0 20px 1px rgba(56, 7, 7, 0.808);
+}
 @media screen and (max-width:1200px){
     .MemberBox{
-        width: 40%;
+        width: 30%;
+    }
+    .MemberImage img{
+        border-radius: 50%;
+        width: 45%;
     }
 }
 @media screen and (max-width:600px){
     .MemberBox{
         width: 90%;
+    }
+    .MemberImage img{
+        border-radius: 50%;
+        width: 40%;
     }
 }
 /* Contact Us Section  */
