@@ -528,4 +528,10 @@ textarea.input {
     .btn {
         padding: 0.45rem 1.2rem
     }
-}
+
+
+   /* FOOTER */
+    .bg-red {
+        color: #fff;
+        background-color: #a10909;
+    }
