@@ -15,11 +15,121 @@ body{
     background-color: black;
     align-items: center;
     justify-content: center;
+   /* position: relative;
+    height: 7000px;
+    width: 100%;*/
 }
+/*
+body::before{
+    content:"";
+    background: url(/images/bg.jpg);
+    position: absolute;
+    height: 5000px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}*/
+/*Home*/
+/*navbar*/
+#logo {
+    margin: 0px 4px;
+    padding: 0px 4px;
+    
+}
+#logo img {
+    height: 60px;
+    margin: 0px;
+    border: 1px solid rgb(71, 70, 70);
+    border-radius: 50%;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#navbar p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    margin: 0px 0px 0px 4px;
+}
+#navbar::before{
+    content: "";
+    background-color: red ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.20;
+    z-index: -1;
+}
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li a{
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    margin: 22px 4vw 1px 3vw;
+    padding: 2px 14px;
+    border: 2px solid transparent;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    border-bottom: 2px solid red;
+    border-top: 2px solid rgb(146, 41, 41);
+    border-radius: 50px;
+    
+    
+}
+
+/*Welcome*/
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome {
+    width: 401px;
+    display: block;
+    margin: 100px auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content:left;
+    color: rgb(146, 25, 25);
+  /*  border: 2px solid red;*/
+}
+.welcome #p1{
+    font-size: 15px;
+    margin: 1px 0px -19px;
+    padding: 0px;
+}
+.welcome #p2{
+    font-size: 55px;
+    color: rgb(235, 207, 207);
+}
+hr{
+    color: red;
+    
+}
+hr:not([size]) {
+    height: 3px;
+   margin-top: -32px;
+}
+.welcome #p3 {
+    font-size: 15px;
+    margin: -21px 0px -10px;
+}
+.welcome #p4{
+    font-size: 32px;
+}
+
 section{
     height:1500px;
 
-    border: 2px solid red;
 }
 ::placeholder {
     color:white;
@@ -118,11 +228,13 @@ h1{
 
 /* Our Team Section  */
 .OurTeam{
-    background: #666363;
+    background: #88888899;
     box-shadow: 0px 25px #73737396;
+    margin-bottom: 25px;
 }
 .OurTeam h1{
     opacity: 1;
+    font-family: 'UnifrakturCook', cursive;
 }
 .ContainerOfLeaders{
     border: 2px solid yellow;
@@ -153,6 +265,8 @@ h1{
     text-align: center;
     margin: 2%;
     padding: 2%;
+    font-family: 'Jacques Francois Shadow', cursive;
+    font-size: 1rem;
 }
 .MemberPost{
     text-align: center;
