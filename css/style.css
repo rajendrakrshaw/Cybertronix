@@ -128,7 +128,9 @@ body::before{
     align-items: center;
     justify-content: center;
 }
+/*Welcome text*/
 .welcome {
+    font-family: 'Baloo Bhai 2', cursive;
     width: 401px;
     display: block;
     margin: 200px auto;
@@ -138,14 +140,41 @@ body::before{
     color: rgb(146, 25, 25);
   /*  border: 2px solid red;*/
 }
+
 .welcome #p1{
+    font-weight: bold;
     font-size: 15px;
-    margin: 1px 0px -19px;
+    margin: 1px 0px -26px;
     padding: 0px;
 }
-.welcome #p2{
-    font-size: 55px;
-    color: rgb(235, 207, 207);
+.welcome #p2 {
+    position:relative;
+    font-family: 'Girassol', cursive;
+    font-size: 76px;
+    color: black;
+    -webkit-text-stroke: 1px red;
+}
+.welcome #p2::before {
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    color: rgb(250, 226, 226);
+    -webkit-text-stroke: 0px red;
+    border-right: 2px solid red;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width: 100%;
+    }
 }
 hr{
     color: red;
@@ -153,13 +182,16 @@ hr{
 }
 hr:not([size]) {
     height: 3px;
-   margin-top: -32px;
+   margin-top: -39px;
+   margin-bottom: 21px;
 }
 .welcome #p3 {
+    font-weight: bold;
     font-size: 15px;
-    margin: -21px 0px -10px;
+    margin: -23px 0px -12px;
 }
 .welcome #p4{
+    font-weight: bold;
     font-size: 32px;
 }
 
