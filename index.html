@@ -48,6 +48,7 @@
         </div>
         <p>Cybertronix</p>
         <ul>
+
             <li><a class="Home active" href="#Home">Home</a></li>
             <li><a class="AboutUs" href="#AboutUs">About Us</a></li>
             <li><a class="Activity" href="#Activity">Clubs</a></li>
@@ -59,6 +60,8 @@
                 </ul>
             </li>
             <li><a class="ContactUs" href="#ContactUs">Contact Us</a></li>
+
+          
         </ul>
     </nav>
    
@@ -78,7 +81,7 @@
         <h1>About Us</h1>
     </section>
     <!--Activity-->
-    <section id="Activity">
+    <section id="Activity" class="animated animatedFadeInUp fadeInUp">
         <h1 style="text-align: center; padding-top: 50px;  color: red; font-family: sans-serif;">ACTIVITY</h1>
 
         <!-- We at TiH Part-->
@@ -243,10 +246,10 @@
 
 
     <!--Contact Us-->
-    <section id="ContactUs">
+    <section id="ContactUs" >
         <h1 style="text-align: center; padding-top: 50px;  color: red; font-family:lato,sans-serif; font-weight: 100;">
             CONTACT US</h1>
-        <div class="container_contact">
+        <div class="container_contact animated animatedFadeInUp fadeInUp">
             <div class="form">
                 <div class="contact-info">
                     <h3 class="title">Let's get in touch</h3>
@@ -265,8 +268,8 @@
                     </div>
                     <div class="social-media">
                         <p>Connect with us :</p>
-                        <div class="social-icons"> <a href="#"> <i class="fab fa-facebook-f"></i> </a> <a href="#"> <i
-                                    class="fab fa-instagram"></i> </a> <a href="#"> <i class="fab fa-linkedin-in"></i>
+                        <div class="social-icons"> <a href="https://www.facebook.com/CodechefTCHChapter" target="_blank"> <i class="fab fa-facebook-f"></i> </a> <a href="https://instagram.com/codechef.tch.chapter?igshid=wfu1t9mogkxh" target="_blank"> <i
+                                    class="fab fa-instagram"></i> </a> <a href="https://www.linkedin.com/in/codechef-tch-chapter-8909961bb" target="_blank"> <i class="fab fa-linkedin-in"></i>
                             </a> </div>
                     </div>
                 </div>
@@ -288,6 +291,9 @@
         </div>
     </section>
     
+<!-- TOP BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="animated2 fadeInRight">Top</button>
+
         <!-- FOOTER -->
         <div class="bg-red py-5">
             <div class="row px-3"> <h4 style="font-family: Bai Jamjuree; margin-bottom: 4%;"> CYBERTRONIX |<span style="font-size:small; margin-left: 20%;">follow us:</span><a href="https://www.facebook.com/CodechefTCHChapter "class="fab fa-facebook-square text-sm " style="margin-right: 4%; margin-left: 5%; color:white; text-decoration: none; ">
@@ -318,7 +324,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
