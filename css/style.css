@@ -295,61 +295,48 @@ h1{
 
 
 /* Our Team Section  */
-.OurTeam{
-    background: #88888899;
-    box-shadow: 12px 12px 25px 25px rgba(56, 7, 7, 0.808);
-    margin-bottom: 25px;
-    box-shadow: 0 0 20px 1px rgba(133, 3, 3, 0.959);
-
-
-}
-.OurTeam h1{
-    opacity: 1;
-    font-family: 'UnifrakturCook', cursive;
-}
 .ContainerOfLeaders{
     /* border: 2px solid yellow; */
     color: red;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-flow: wrap;
-    padding-top: 1%;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding-top: 20px;
+    margin-top: 30px;
 }
 .MemberBox{
      /*border: 2px solid cyan; */
     width: 280px;
-    margin: 50px 4px;
+    height: 160px;
+    margin: 60px 10px;
     padding: 1% 0px;
     box-shadow: 2px 2px 10px 1px rgba(133, 3, 3, 0.959);
     box-shadow: 4px 4px 15px 2px rgb(133 3 3 / 96%);
-
     border-radius: 10px;
 }
 .MemberBox:hover{
-    /*box-shadow: 0 0 20px 1px rgb(92, 89, 89);
-    box-shadow: 2px 2px 10px 1px rgba(133, 3, 3, 0.959);*/
     box-shadow: 2px 2px 10px 1px #cc0000;
+    box-shadow: 2px 2px 10px 1px#ff1a1a;
+
     background-color:rgba(24, 1, 1, 0.418) ; 
-    /*width: 300px;*/
+    transform: scale(1.1,1.1);
+    transition: all 200ms ease-out;
 }
 .MemberImage{
+    /*border: 2px solid greenyellow;*/
     display: flex;
     align-items: center;
     justify-content: center;
-    /*border: 2px solid greenyellow;*/
-    /* margin-bottom: 80px; */
-    position: relative;
-    top=-50%;
-
+    margin-bottom: 20px;
 }
 .MemberImage img{
     border-radius: 50%;
     width: 120px;
-    
+    margin-top: -80px;
 }
 .MemberName{
+    /*border: 2px solid yellow;*/
     text-align: center;
     margin: 2px 2px 0px 2px;
     padding: 0px;
@@ -360,7 +347,6 @@ h1{
     letter-spacing: 1px;
     text-transform: uppercase;
     font-family: "Atomic Age", cursive;
-    /*border: 2px solid yellow;*/
 }
 .MemberPost{
     /*border: 2px solid cyan;*/
@@ -783,9 +769,10 @@ textarea.input {
 #myBtn {
     display: none;
     position:fixed;
-    margin-top:20%;
+    margin-top:40%;
     margin-left:90%;
     z-index:99;
+    text-align: center;
     font-size: 18px;
     border: none;
     outline: none;
@@ -793,7 +780,7 @@ textarea.input {
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 40px;
   }
   
   #myBtn:hover {
@@ -801,8 +788,6 @@ textarea.input {
   }
   /* ANIMATION TOP BUTTON */
   .animated2 {
-    background-image: url(/css/images/logo.png);
-    background-repeat: no-repeat;
     background-position: left top;
     padding-top:95px;
     margin-bottom:60px;
