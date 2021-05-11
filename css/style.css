@@ -751,9 +751,10 @@ textarea.input {
 #myBtn {
     display: none;
     position:fixed;
-    margin-top:20%;
+    margin-top:40%;
     margin-left:90%;
     z-index:99;
+    text-align: center;
     font-size: 18px;
     border: none;
     outline: none;
@@ -761,7 +762,7 @@ textarea.input {
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 40px;
   }
   
   #myBtn:hover {
@@ -769,8 +770,6 @@ textarea.input {
   }
   /* ANIMATION TOP BUTTON */
   .animated2 {
-    background-image: url(/css/images/logo.png);
-    background-repeat: no-repeat;
     background-position: left top;
     padding-top:95px;
     margin-bottom:60px;
