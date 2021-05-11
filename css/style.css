@@ -45,9 +45,11 @@ body::before{
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: fixed;
     top: 0px;
     left: 0px;
+    height: 75px;
+    width: 100%;
 }
 #navbar p {
     color: white;
@@ -68,6 +70,9 @@ body::before{
     display: flex;
     list-style: none;
 }
+#navbar ul li{
+    position: relative;
+}
 
 #navbar ul li a{
     display: block;
@@ -78,12 +83,39 @@ body::before{
     border: 2px solid transparent;
     text-decoration: none;
 }
+
 #navbar ul li a:hover{
     border-bottom: 2px solid red;
     border-top: 2px solid rgb(146, 41, 41);
     border-radius: 50px;
-    
-    
+}
+.active{
+    border-bottom: 2px solid red;
+    border-top: 2px solid rgb(146, 41, 41);
+    border-radius: 50px;
+    background-color: red;
+}
+a:active{
+    background-color: yellow;
+}
+/*Team*/
+#navbar ul ul{
+    position: absolute;
+    display: none;
+    top: 60px;
+    background: #310707;
+    width: 160px;
+}
+
+#navbar ul ul li a{
+    color: white;
+    background: #310707;
+    margin: 6px 0px 0px 7px;
+    width: 79px;
+    padding: 0px 0px 0px 17px;
+}
+#navbar ul li:hover > ul{
+    display: block;
 }
 
 /*Welcome*/
