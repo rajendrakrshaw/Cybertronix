@@ -21,12 +21,12 @@ window.addEventListener('scroll', ()=>{
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
       //  console.log(sectionTop);
-        if(pageYOffset >= sectionTop) {
+        if(pageYOffset >= (sectionTop) - sectionHeight/3) {
             current = section.getAttribute('id');
             
         }
     })
-    console.log(current);
+    //console.log(current);
     navLiA.forEach( a =>{
         a.classList.remove('active');
         if(a.classList.contains(current)){

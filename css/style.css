@@ -88,16 +88,17 @@ body::before{
     border-bottom: 2px solid red;
     border-top: 2px solid rgb(146, 41, 41);
     border-radius: 50px;
+    cursor: pointer;
 }
 .active{
     border-bottom: 2px solid red;
     border-top: 2px solid rgb(146, 41, 41);
     border-radius: 50px;
-    background-color: red;
+    background-color: gray;
+    cursor: pointer;
+    color: red;
 }
-a:active{
-    background-color: yellow;
-}
+
 /*Team*/
 #navbar ul ul{
     position: absolute;
@@ -127,7 +128,7 @@ a:active{
 .welcome {
     width: 401px;
     display: block;
-    margin: 100px auto;
+    margin: 200px auto;
     flex-direction: column;
     align-items: center;
     justify-content:left;
