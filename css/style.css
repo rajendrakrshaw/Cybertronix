@@ -70,8 +70,9 @@ body::before{
     display: flex;
     list-style: none;
 }
-#navbar ul li{
+#navbar ul li {
     position: relative;
+    padding: 15px 4px;
 }
 
 #navbar ul li a{
@@ -103,11 +104,13 @@ body::before{
 #navbar ul ul{
     position: absolute;
     display: none;
-    top: 60px;
+    top: 82px;
     background: #310707;
     width: 160px;
 }
-
+#navbar ul ul li{
+    padding: 4px 0px;
+}
 #navbar ul ul li a{
     color: white;
     background: #310707;
