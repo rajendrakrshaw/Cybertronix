@@ -90,13 +90,11 @@ body::before{
     border-radius: 50px;
     cursor: pointer;
 }
-.active{
+#navbar ul li .active{
     border-bottom: 2px solid red;
     border-top: 2px solid rgb(146, 41, 41);
     border-radius: 50px;
-    background-color: gray;
     cursor: pointer;
-    color: red;
 }
 
 /*Team*/
