@@ -266,7 +266,7 @@ h1 span:nth-child(11){
     display: flex;
     margin: 0px;
 }
-#AbtContent .center{
+#AboutUs .center{
    /* border: 0.8px solid white; */
    margin: 25px 55px;
 }
@@ -310,29 +310,29 @@ button{
    font-size:14px;
    padding:5px;
 }
-#AbtContent .box p{
+#AboutUs .box p{
    color:#ff7152;
 }
-#AbtContent .box2{
+#AboutUs .box2{
    border: 0.8px solid white;
    padding: 25px;
    margin: 25px 6px;
    border-radius: 15px;
 }
-#AbtContent .box2 h3{
+#AboutUs .box2 h3{
    text-align: center;
    color: White;
    justify-content: left;
    font-size: 35px;
    text-decoration: line-through 1.5px solid black;
 }
-#AbtContent .box2 p{
+#AboutUs .box2 p{
    /* border: 0.2px solid white; */
    color: #ff7152;
    margin: 10px 75px;
 
 }
-#AbtContent .box2 img{
+#AboutUs .box2 img{
    height: 160px;
    margin: auto;
    justify-content: right;
