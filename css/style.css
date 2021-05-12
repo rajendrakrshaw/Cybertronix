@@ -42,6 +42,7 @@ body::before{
     border: 1px solid rgb(71, 70, 70);
     border-radius: 50%;
 }
+
 #navbar{
     display: flex;
     align-items: center;
@@ -51,7 +52,9 @@ body::before{
     height: 75px;
     width: 100%;
 }
-#navbar p {
+#navbar h3 {
+
+    display: block;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
