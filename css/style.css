@@ -485,7 +485,11 @@ button{
 .MemberPost{
     /*border: 2px solid cyan;*/
     text-align: center;
-    font-family: 'Vast', cursive;
+    color: #ffffff8c;
+}
+#Team{
+    margin: 5% 0px;
+    height: auto;
 }
 
 /* Contact Us Section  */
