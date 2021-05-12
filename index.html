@@ -88,13 +88,95 @@
             
         </div>
     </section>
-    <!--About Us-->
-    <section id="AboutUs">
-        <h1>About Us</h1>
+<!-- About Us Section  -->
+    <section>
+        <div id="AbtContent">
+            <h1>
+                <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+                <span>U</span><span>s</span>
+            </h1>
+                <div class="center">
+                   <p>The Official Technology club of Techno India Hooghly -Cybertronix, was established by Soumyadeep De, Sankhajeet Taran, Ranit Ghosh, Debdutta Das, Uddipan Dey & Tamal Dolui to inspire and promote thinkings that are beyond classrooms. At present there are approximately 100-150 members in it. </p>
+                 </div>
+                 <div id="About">
+                    <div class="box" data-aos="zoom-in-right">
+                        <img src="Images/about2.jpg" alt="stating">
+                        <h3>Commencement</h3>
+                        <p>The official Technology Club of Techno India Hooghly -Cybertronix, was established in August 2018. It was established to inspire young minds and to enrich the technical culture inside the College Campus and grow together. Cybertronix has been paving the way for bright and zealous enthusiasts of technology, helping them innovate and create all the while learning important management skills. </p>
+                    </div>
+                    <div class="box">
+                        <img src="images/Aboutus.avif" alt="ideation">
+                        <h3>Ideation</h3>
+                        <p>What can happen if a group of members get accumulated in a computer lab along with some Geeks to just talk and ideate? Well, that's what led to EDGE, the first-ever independent technological fest of our college in 2005, although being a part of Anakhronos - our cultural fest. Support flourished through the young minds making it possible for a first grand Virtual Event.<span id="dots">...</span><span id="more"> The popularity led to the foundation of our very first website for Spark Quest 2.0.</span> </p>
+                         <button type="button" id="read" onclick="read()">Read More</button>
+                         <script type="text/JavaScript">
+                            var i=0;
+                            function read(){
+                                if(!i){
+                                    document.getElementById("more").style.
+                                    display="inline";
+                                    document.getElementById("dots").style.
+                                    display="none";
+                                    document.getElementById("read").innerHTML="Read Less";
+                                    i=1;
+                                }
+                                else{
+                                   document.getElementById("more").style.
+                                    display="none";
+                                    document.getElementById("dots").style.
+                                    display="inline";
+                                    document.getElementById("read").innerHTML="Read More";
+                                    i=0; 
+                                }
+                            }
+                            </script>
+                    </div>
+                    <div class="box">
+                        <img src="Images/download.jpg" alt="execution">
+                        <h3>Execution</h3>
+                        <p>From struggling to approach companies for sponsorship to getting permissions from the authorities - the journey from ideation to inception to execution was never a cakewalk. Virtual Event, the brainchild of many, started its journey in the year 2007 with the tagline “Think Beyond”. Every challenge, every adversity was the seed of opportunity and growth. The team with <span id="dots2">...</span><span id="more2"> their indomitable spirit brought in sponsors - a first in those times when all other fests completely relied on college funds. The fest was held on weekends to not disturb the normal college schedule with no access to infrastructure. Virtual Event had to rent its server, buy its own domain name (at a time when getting a credit card was not easy). After overcoming all the hurdles, the first website was launched at edg.co.in. As time proceeded, Virtual Event became a brand - a brand everyone looks up to now. The never-ending zeal to do better still continues.</p>
+                         <button type="button" id="read2" onclick="read2()">Read More</button>
+                    </div>
+                     <script type="text/JavaScript">
+                            var i=0;
+                            function read2(){
+                                if(!i){
+                                    document.getElementById("more2").style.
+                                    display="inline";
+                                    document.getElementById("dots2").style.
+                                    display="none";
+                                    document.getElementById("read2").innerHTML="Read Less";
+                                    i=1;
+                                }
+                                else{
+                                   document.getElementById("more2").style.
+                                    display="none";
+                                    document.getElementById("dots2").style.
+                                    display="inline";
+                                    document.getElementById("read2").innerHTML="Read More";
+                                    i=0; 
+                                }
+                            }
+                            </script>
+                            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+                            <script src="aos.js"></script>
+                            <script type="text/JavaScript">
+                                AOS.init();
+                            </script>
+
+                </div>
+                <div class="box2">
+                        <h3>Our Journey</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum ea, at autem ipsum temporibus qui est et deleniti repudiandae quasi velit optio nobis laudantium error atque reiciendis sapiente, tempore doloribus deserunt fuga voluptas voluptatem delectus perspiciatis. Nihil quos eum, provident suscipit laborum tempora esse quas dolore aliquam iure, consequuntur ad error ea eligendi eaque dolores consequatur facilis quam officia! Numquam quibusdam delectus esse, rerum voluptatibus temporibus voluptatem tempore, illum aspernatur, dolorum obcaecati excepturi dicta cumque provident? Exercitationem ipsam nulla repellat neque a repellendus iste aut hic eos deleniti, iusto rem?</p>
+                        <img src="Images/images (3).jpg" alt="journey">
+                </div>
+        </div>            
     </section>
     <!--Activity-->
     <section id="Activity" class="animated animatedFadeInUp fadeInUp">
-        <h1 style="text-align: center; padding-top: 50px;  color: red; font-family: sans-serif;">ACTIVITY</h1>
+        <h1>
+            <span>A</span><span>c</span><span>t</span><span>i</span><span>v</span><span>i</span><span>t</span><span>y</span>
+        </h1>
 
         <!-- We at TiH Part-->
         <div class="container my-5" style="padding-top: 10%; padding-bottom:10%;">
@@ -165,7 +247,10 @@
     <!--Team-->
     <section id="Team">
         <div class="OurTeam">
-            <h1>Our Team</h1>
+            <h1>
+                <span>O</span><span>u</span><span>r</span>
+                <span>T</span><span>e</span><span>a</span><span>m</span>
+            </h1>
         </div>
         <div class="ContainerOfLeaders">
             <div class="MemberBox">
@@ -262,8 +347,10 @@
 
     <!--Contact Us-->
     <section id="ContactUs">
-        <h1 style="text-align: center; padding-top: 50px;  color: red; font-family:lato,sans-serif; font-weight: 100;">
-            CONTACT US</h1>
+        <h1>
+            <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+            <span>U</span><span>s</span>
+        </h1>
         <div class="container_contact animated animatedFadeInUp fadeInUp">
             <div class="form">
                 <div class="contact-info">

@@ -206,11 +206,137 @@ section{
     color:white;
     opacity: 0.5;
   }
-  
+/*Headings*/  
 h1{
-    color: Red;
     font-size: 50px;
     text-align: center;
+   /* box-shadow: 0 0 10px red;*/
+}
+
+h1 span{
+    text-transform: uppercase;
+    animation: animateH 2s linear infinite;
+}
+h1 span:nth-child(1){
+    animation-delay: 0s; 
+}
+h1 span:nth-child(2){
+    animation-delay: 0.1s; 
+}
+h1 span:nth-child(3){
+    animation-delay: 0.2s; 
+}
+h1 span:nth-child(4){
+    animation-delay: 0.3s; 
+}
+h1 span:nth-child(5){
+    animation-delay: 0.4s; 
+}
+h1 span:nth-child(6){
+    animation-delay: 0.5s; 
+}
+h1 span:nth-child(7){
+    animation-delay: 0.6s; 
+}
+h1 span:nth-child(8){
+    animation-delay: 0.7s; 
+}
+h1 span:nth-child(9){
+    animation-delay: 0.8s; 
+}
+h1 span:nth-child(10){
+    animation-delay: 0.9s; 
+}
+h1 span:nth-child(11){
+    animation-delay: 1s; 
+}
+
+@keyframes animateH{
+    0%,100%{
+        color: red;
+    }
+    5%,95%{
+        color: white;
+    }
+}
+
+/* About Us Section */
+#About{
+    display: flex;
+    margin: 0px;
+}
+#AbtContent .center{
+   /* border: 0.8px solid white; */
+   margin: 25px 55px;
+}
+.center p{
+   /* border: 0.2px solid white; */
+   text-align: center;
+   color: #ff7152;
+   margin: 35px auto;
+   font-size: 25px;
+}
+#About .box {
+   border: 0.8px solid white;
+   padding: 25px;
+   margin: 25px 6px;
+   border-radius: 15px;
+}
+#About .box img{
+   height: 160px;
+   margin: auto;
+   display: block;
+   border-radius: 10px;
+}
+#About .box h3{
+   text-align: center;
+   color: White;
+   font-size: 35px;
+   text-decoration: line-through 1.5px solid black;
+}
+#more{
+   display:none;
+}
+#more2{
+   display:none;
+}
+button{
+   background:transparent;
+   color:Red;
+   border:0.8px solid red;
+   border-radius:8px;
+   outline:none;
+   font-size:14px;
+   padding:5px;
+}
+#AbtContent .box p{
+   color:#ff7152;
+}
+#AbtContent .box2{
+   border: 0.8px solid white;
+   padding: 25px;
+   margin: 25px 6px;
+   border-radius: 15px;
+}
+#AbtContent .box2 h3{
+   text-align: center;
+   color: White;
+   justify-content: left;
+   font-size: 35px;
+   text-decoration: line-through 1.5px solid black;
+}
+#AbtContent .box2 p{
+   /* border: 0.2px solid white; */
+   color: #ff7152;
+   margin: 10px 75px;
+
+}
+#AbtContent .box2 img{
+   height: 160px;
+   margin: auto;
+   justify-content: right;
+   border-radius: 10px;
+   margin:10px auto;
 }
 
 /* Activity section */
