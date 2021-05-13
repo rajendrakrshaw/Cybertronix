@@ -87,6 +87,33 @@
             <p id="p4">TECHNO INDIA HOOGHLY</p>
             
         </div>
+        <!-- Carousel -->
+        <div class="imgcontainer">
+            <div class="slideshowcontainer">
+                <div id="playpausebtn" onclick="playpauseslide()"></div>
+                <div class="leftArrow" onclick="plusSlides(-1)"> <span class="arrow arrowLeft"></span> </div>
+                <div class="rightArrow" onclick="plusSlides(1)"> <span class="arrow arrowRight"></span> </div>
+                <div class="captionholder"><p class="captiontext"></p></div>
+                <div class="imageholder">
+                    <img src="images/college.jpg" alt="college">
+                    <p class="captiontext">Techno India Hooghly</p>
+                </div>
+                <div class="imageholder">
+                    <img src="images/spark.jpg" alt="spark quest">
+                    <p class="captiontext">Spark Quest 2.O</p>
+                </div>
+                <div class="imageholder">
+                    <img src="images/verbena.jpeg" alt="Vcc">
+                    <p class="captiontext">Verbena Cultural Committee</p>
+                </div>
+                <div class="imageholder">
+                    <img src="images/technologo.jpeg" alt="Techno Logo">
+                    <p class="captiontext">Techno Group Logo</p>
+                </div>
+            </div>
+            <div id="dotsContainer"></div>
+        </div>
+        <script src="Carousel.js"></script>
     </section>
 <!-- About Us Section  -->
     <section>
@@ -102,7 +129,7 @@
                         <p>The official Technology Club of Techno India Hooghly -Cybertronix, was established in August 2018. It was established to inspire young minds and to enrich the technical culture inside the College Campus and grow together. Cybertronix has been paving the way for bright and zealous enthusiasts of technology, helping them innovate and create all the while learning important management skills. </p>
                     </div>
                     <div class="box">
-                        <img src="images/Aboutus.avif" alt="ideation">
+                        <img src="images/ideation.jpg" alt="ideation">
                         <h3>Ideation</h3>
                         <p>What can happen if a group of members get accumulated in a computer lab along with some Geeks to just talk and ideate? Well, that's what led to EDGE, the first-ever independent technological fest of our college in 2005, although being a part of Anakhronos - our cultural fest. Support flourished through the young minds making it possible for a first grand Virtual Event.<span id="dots">...</span><span id="more"> The popularity led to the foundation of our very first website for Spark Quest 2.0.</span> </p>
                          <button type="button" id="read" onclick="read()">Read More</button>
@@ -155,18 +182,35 @@
                                 }
                             }
                             </script>
-                            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-                            <script src="aos.js"></script>
-                            <script type="text/JavaScript">
-                                AOS.init();
-                            </script>
 
                 </div>
                 <div class="box2">
                         <h3>Our Journey</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum ea, at autem ipsum temporibus qui est et deleniti repudiandae quasi velit optio nobis laudantium error atque reiciendis sapiente, tempore doloribus deserunt fuga voluptas voluptatem delectus perspiciatis. Nihil quos eum, provident suscipit laborum tempora esse quas dolore aliquam iure, consequuntur ad error ea eligendi eaque dolores consequatur facilis quam officia! Numquam quibusdam delectus esse, rerum voluptatibus temporibus voluptatem tempore, illum aspernatur, dolorum obcaecati excepturi dicta cumque provident? Exercitationem ipsam nulla repellat neque a repellendus iste aut hic eos deleniti, iusto rem?</p>
-                        <img src="Images/images (3).jpg" alt="journey">
+                <div class="carousel">
+
+                    <div class="left" onclick="plusSlide(-1)"> <span class="arrow1 a_Left"></span> </div>
+                    <div class="right" onclick="plusSlide(1)"> <span class="arrow1 a_Right"></span> </div>
+                    <div class="ca_holder"><p class="ca_text"></p></div>
+                    <div class="imgholder">
+                        <img src="images/IMG-20210511-WA0006.jpg" alt="events">
+                        <p class="ca_text">Techno India Hooghly</p>
+                    </div>
+                    <div class="imgholder">
+                        <img src="images/IMG-20210511-WA0007.jpg" alt="events">
+                        <p class="ca_text">Spark Quest 2.O</p>
+                    </div>
+                    <div class="imgholder">
+                        <img src="images/IMG-20210511-WA0008.jpg" alt="events">
+                        <p class="ca_text">Verbena Cultural Committee</p>
+                    </div>
+                    <div class="imgholder">
+                        <img src="images/IMG-20210511-WA0009.jpg" alt="events">
+                        <p class="ca_text">Techno Group Logo</p>
+                    </div>
+                    <script src="Carousel1.js"></script>
                 </div>
+            </div>
         </div>            
     </section>
     <!--Activity-->
