@@ -39,7 +39,8 @@
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
+    <!-- About Us Section Animation  -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
 
@@ -90,25 +91,24 @@
         <!-- Carousel -->
         <div class="imgcontainer">
             <div class="slideshowcontainer">
-                <div id="playpausebtn" onclick="playpauseslide()"></div>
                 <div class="leftArrow" onclick="plusSlides(-1)"> <span class="arrow arrowLeft"></span> </div>
                 <div class="rightArrow" onclick="plusSlides(1)"> <span class="arrow arrowRight"></span> </div>
-                <div class="captionholder"><p class="captiontext"></p></div>
                 <div class="imageholder">
-                    <img src="images/college.jpg" alt="college">
-                    <p class="captiontext">Techno India Hooghly</p>
+                    <img src="images/C1.jpg" alt="college">    
                 </div>
                 <div class="imageholder">
-                    <img src="images/spark.jpg" alt="spark quest">
-                    <p class="captiontext">Spark Quest 2.O</p>
+                    <img src="images/C2.jpg" alt="spark quest">
                 </div>
                 <div class="imageholder">
-                    <img src="images/verbena.jpeg" alt="Vcc">
-                    <p class="captiontext">Verbena Cultural Committee</p>
+                    <img src="images/C3.jpg" alt="Vcc">
                 </div>
                 <div class="imageholder">
-                    <img src="images/technologo.jpeg" alt="Techno Logo">
-                    <p class="captiontext">Techno Group Logo</p>
+                    <img src="images/C4.jpg" alt="Techno Logo">
+        
+                </div>
+                <div class="imageholder">
+                    <img src="images/C5.jpg" alt="Techno Logo">
+        
                 </div>
             </div>
             <div id="dotsContainer"></div>
@@ -123,98 +123,96 @@
                 <span>U</span><span>s</span>
             </h1>
                 <div class="center">
-                   <p>The Official Technology club of Techno India Hooghly -Cybertronix, was established by Soumyadeep De, Sankhajeet Taran, Ranit Ghosh, Debdutta Das, Uddipan Dey & Tamal Dolui to inspire and promote thinkings that are beyond classrooms. At present there are approximately 100-150 members in it. </p>
+                   <p>The Official Technology club of Techno India Hooghly -Cybertronix, was established by<em> Soumyadeep De, Sankhajeet Taran, Ranit Ghosh, Debdutta Das, Uddipan Dey & Tamal Dolui </em> to inspire and promote thinkings that are beyond classrooms. At present there are approximately 100-150 members in it. </p>
                  </div>
-                 <div id="About">
-                    <div class="box" data-aos="zoom-in-right">
-                        <img src="Images/about2.jpg" alt="stating">
-                        <h3>Commencement</h3>
-                        <p>The official Technology Club of Techno India Hooghly -Cybertronix, was established in August 2018. It was established to inspire young minds and to enrich the technical culture inside the College Campus and grow together. Cybertronix has been paving the way for bright and zealous enthusiasts of technology, helping them innovate and create all the while learning important management skills. </p>
-                    </div>
-                    <div class="box">
-                        <img src="images/ideation.jpg" alt="ideation">
-                        <h3>Ideation</h3>
-                        <p>What can happen if a group of members get accumulated in a computer lab along with some Geeks to just talk and ideate? Well, that's what led to EDGE, the first-ever independent technological fest of our college in 2005, although being a part of Anakhronos - our cultural fest. Support flourished through the young minds making it possible for a first grand Virtual Event.<span id="dots">...</span><span id="more"> The popularity led to the foundation of our very first website for Spark Quest 2.0.</span> </p>
-                         <button type="button" id="read" onclick="read()">Read More</button>
-                         <script type="text/JavaScript">
-                            var i=0;
-                            function read(){
-                                if(!i){
-                                    document.getElementById("more").style.
-                                    display="inline";
-                                    document.getElementById("dots").style.
-                                    display="none";
-                                    document.getElementById("read").innerHTML="Read Less";
-                                    i=1;
-                                }
-                                else{
+                <div id="About">
+                    <div class="Comm_box box ">
+                        <img src="Images/Commencement.jpg" alt="Commencement">
+                        <p><span id="more">The official Technology Club of Techno India Hooghly -<em>Cybertronix,</em> was established in August 2018. It was established to inspire young minds and to enrich the technical culture inside the College Campus and grow together. Cybertronix has been paving the way for bright and zealous enthusiasts of technology, helping them innovate and create all the while learning important management skills. </span></p>
+                        <button type="button" id="read" onclick="read()">COMMENCEMENT</button>
+                        <script type="text/JavaScript">
+                           var i=0;
+                           function read(){
+                               if(!i){
                                    document.getElementById("more").style.
-                                    display="none";
-                                    document.getElementById("dots").style.
-                                    display="inline";
-                                    document.getElementById("read").innerHTML="Read More";
-                                    i=0; 
-                                }
+                                   display="inline";
+                                   document.getElementById("read").innerHTML="Close";
+                                   i=1;
+                               }
+                               else{
+                                  document.getElementById("more").style.
+                                   display="none";
+                                   document.getElementById("read").innerHTML="COMMENCEMENT";
+                                   i=0; 
+                               }
+                           }
+                           </script>
+                    </div>
+                    <div class="Idea_box box">
+                        <img src="images/ideation.jpg" alt="Ideation">
+                        <p><span id="more3">With the spirit, to help in growing the futuristic ideas of young minds the club <em>Cybertronix</em> is established and that's led to <em> Spark Quest.</em>The first-ever independent technological fest of our college in 2018. Support flourished through the young minds and Faculty Members making it possible for a first grand Virtual Event. The popularity led to the foundation of our very first website for <em>https://sparkquest.in</em> </span></p>
+                        <button type="button" id="read3" onclick="read3()">IDEATION</button>
+                    </div>
+                    <script type="text/JavaScript">
+                        var i=0;
+                        function read3(){
+                            if(!i){
+                                document.getElementById("more3").style.
+                                display="inline";
+                                document.getElementById("read3").innerHTML="Close";
+                                i=1;
                             }
-                            </script>
+                            else{
+                               document.getElementById("more3").style.
+                               display="none";
+                               document.getElementById("read3").innerHTML="IDEATION";
+                               i=0; 
+                            }
+                        }
+                    </script>
+                    <div class="Exe_box box">
+                        <img src="Images/Execution.jpg" alt="Execution">
+                        <p><span id="more2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium molestiae repellendus fuga! Eaque officiis explicabo odio quae atque harum consequuntur ipsa repudiandae, sunt ex eius totam ut animi porro placeat dolorem est alias, nihil corporis! Optio necessitatibus odit iure? Velit animi numquam facilis dolor dolores provident dolore quos atque at tenetur rerum aut quidem, sunt pariatur laudantium modi cupiditate adipisci, mollitia veritatis dolorem quasi. Quod velit similique reprehenderit sint quidem culpa autem voluptatum ipsum magni.</p>
+                        <button type="button" id="read2" onclick="read2()">EXECUTION</button>
                     </div>
-                    <div class="box">
-                        <img src="Images/download.jpg" alt="execution">
-                        <h3>Execution</h3>
-                        <p>From struggling to approach companies for sponsorship to getting permissions from the authorities - the journey from ideation to inception to execution was never a cakewalk. Virtual Event, the brainchild of many, started its journey in the year 2007 with the tagline “Think Beyond”. Every challenge, every adversity was the seed of opportunity and growth. The team with <span id="dots2">...</span><span id="more2"> their indomitable spirit brought in sponsors - a first in those times when all other fests completely relied on college funds. The fest was held on weekends to not disturb the normal college schedule with no access to infrastructure. Virtual Event had to rent its server, buy its own domain name (at a time when getting a credit card was not easy). After overcoming all the hurdles, the first website was launched at edg.co.in. As time proceeded, Virtual Event became a brand - a brand everyone looks up to now. The never-ending zeal to do better still continues.</p>
-                         <button type="button" id="read2" onclick="read2()">Read More</button>
-                    </div>
-                     <script type="text/JavaScript">
-                            var i=0;
-                            function read2(){
-                                if(!i){
-                                    document.getElementById("more2").style.
+                    <script type="text/JavaScript">
+                        var i=0;
+                        function read2(){
+                            if(!i){
+                                document.getElementById("more2").style.
                                     display="inline";
-                                    document.getElementById("dots2").style.
-                                    display="none";
-                                    document.getElementById("read2").innerHTML="Read Less";
+                                    document.getElementById("read2").innerHTML="Close";
                                     i=1;
                                 }
                                 else{
-                                   document.getElementById("more2").style.
+                                    document.getElementById("more2").style.
                                     display="none";
-                                    document.getElementById("dots2").style.
-                                    display="inline";
-                                    document.getElementById("read2").innerHTML="Read More";
+                                    document.getElementById("read2").innerHTML="EXECUTION";
                                     i=0; 
                                 }
                             }
-                            </script>
-
+                    </script>
                 </div>
-                <div class="box2">
-                        <h3>Our Journey</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum ea, at autem ipsum temporibus qui est et deleniti repudiandae quasi velit optio nobis laudantium error atque reiciendis sapiente, tempore doloribus deserunt fuga voluptas voluptatem delectus perspiciatis. Nihil quos eum, provident suscipit laborum tempora esse quas dolore aliquam iure, consequuntur ad error ea eligendi eaque dolores consequatur facilis quam officia! Numquam quibusdam delectus esse, rerum voluptatibus temporibus voluptatem tempore, illum aspernatur, dolorum obcaecati excepturi dicta cumque provident? Exercitationem ipsam nulla repellat neque a repellendus iste aut hic eos deleniti, iusto rem?</p>
-                <div class="carousel">
-
-                    <div class="left" onclick="plusSlide(-1)"> <span class="arrow1 a_Left"></span> </div>
-                    <div class="right" onclick="plusSlide(1)"> <span class="arrow1 a_Right"></span> </div>
-                    <div class="ca_holder"><p class="ca_text"></p></div>
-                    <div class="imgholder">
-                        <img src="images/IMG-20210511-WA0006.jpg" alt="events">
-                        <p class="ca_text">Techno India Hooghly</p>
-                    </div>
-                    <div class="imgholder">
-                        <img src="images/IMG-20210511-WA0007.jpg" alt="events">
-                        <p class="ca_text">Spark Quest 2.O</p>
-                    </div>
-                    <div class="imgholder">
-                        <img src="images/IMG-20210511-WA0008.jpg" alt="events">
-                        <p class="ca_text">Verbena Cultural Committee</p>
-                    </div>
-                    <div class="imgholder">
-                        <img src="images/IMG-20210511-WA0009.jpg" alt="events">
-                        <p class="ca_text">Techno Group Logo</p>
-                    </div>
-                    <script src="Carousel1.js"></script>
-                </div>
-            </div>
-        </div>            
+                    <div class="Journey_box">
+                            <h3><em>OUR JOURNEY </em></h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam harum ut sunt alias, qui unde quam odit quos! Delectus ipsa fugit ullam quae non, reprehenderit quia earum quibusdam nisi est vero rem magnam veniam nam, modi aliquid? Dolor, molestias! Laudantium corrupti consectetur incidunt explicabo quas sint! Excepturi accusamus, dolorum neque sequi eligendi impedit earum illo saepe maxime. Minima molestias voluptatem consequatur quae id magnam hic maiores ab. Recusandae sequi, laborum voluptatibus dignissimos eaque illo veritatis fugit quod tenetur asperiores, vitae, doloribus provident! Delectus, voluptatibus veniam? Dolore nemo quibusdam doloribus et!</p>
+                            <section class="slideshow">
+                                <div class="about">
+                                    <div class="about-carrousel">
+                                        <figure class="shadow"><img src="images/E1.jpg" alt=""></figure>
+                                        <figure class="shadow"><img src="images/E2.jpg" alt=""></figure>
+                                        <figure class="shadow"><img src="images/E3.jpg" alt=""></figure>
+                                        <figure class="shadow"><img src="images/E4.jpg" alt=""></figure>
+                                        <figure class="shadow"><img src="images/E5.jpg" alt=""></figure>
+                                        <figure class="shadow"><img src="images/E6.jpg" alt=""></figure>
+                                        <figure class="shadow"><img src="images/E7.jpg" alt=""></figure>
+                                        <figure class="shadow"><img src="images/E8.jpg" alt=""></figure>
+                                        <figure class="shadow"><img src="images/E9.jpg" alt=""></figure>
+                                    </div>
+                                </div>
+                            </section>
+                    </div> 
+            </div>           
     </section>
     <!--Activity-->
     <section id="Activity" class="animated animatedFadeInUp fadeInUp">
@@ -509,6 +507,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
     <script src="main.js"></script>
+    </div>
+    </section>
 </body>
 
 </html>
