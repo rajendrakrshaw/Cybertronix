@@ -1,5 +1,10 @@
+#navbar{
+    flex-direction: column;
+}
+/*
 .ContainerOfLeaders{
     flex-direction: column;
     
     justify-content: space-around;
 }
+*/

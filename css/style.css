@@ -35,7 +35,7 @@ body::before{
 #logo {
     margin: 0px 4px;
     padding: 0px 4px;
-    
+    display: flex;
 }
 #logo img {
     height: 60px;
@@ -53,6 +53,7 @@ body::before{
     height: 75px;
     width: 100%;
     z-index: 1;
+    justify-content: space-between;
 }
 #navbar h3 {
 
@@ -60,7 +61,7 @@ body::before{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
-    margin: 0px 0px 0px 4px;
+    margin: 16px 0px 0px 12px;
 }
 #navbar::before{
     content: "";
@@ -77,14 +78,15 @@ body::before{
 }
 #navbar ul li {
     position: relative;
-    padding: 15px 4px;
+    padding: 15px 4px;*
 }
+
 
 #navbar ul li a{
     display: block;
     color: white;
     font-size: 1.2rem;
-    margin: 22px 4vw 1px 3vw;
+    margin:22px 2vw 1px 1vw;
     padding: 2px 14px;
     border: 2px solid transparent;
     text-decoration: none;
@@ -112,6 +114,7 @@ body::before{
     top: 82px;
     background: #310707;
     width: 160px;
+    margin: 0px 0px 0px -24px;
 }
 #navbar ul ul li{
     padding: 4px 0px;
