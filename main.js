@@ -23,13 +23,13 @@ window.addEventListener('scroll', ()=>{
       //  console.log(sectionTop);
         if(pageYOffset >= (sectionTop) - sectionHeight/3) {
             current = section.getAttribute('id');
-            
         }
     })
     //console.log(current);
     navLiA.forEach( a =>{
         a.classList.remove('active');
         if(a.classList.contains(current)){
+            console.log(current);
             a.classList.add('active');
         }
     })

@@ -200,7 +200,7 @@ hr:not([size]) {
 }
 
 section{
-    height:1500px;
+    height:auto;
 
 }
 ::placeholder {
