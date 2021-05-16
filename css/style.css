@@ -447,14 +447,14 @@ h1 span:nth-child(11){
 
 /* About Us Section */
 #AboutUs{
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    height: 95%;
     top: 0px;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     display:block;
     margin: 10px auto;
 }
-#AboutUs .center h2{
+#AboutUs .center h2, #AboutUs .jour_box h2{
     text-align: center;
     font-size: 45px;
     color:white;
@@ -462,18 +462,18 @@ h1 span:nth-child(11){
 }
 #AboutUs .center p{
     width: 80%;
-    height: 150px;
-    /* border: 1px solid grey; */
+    height: 155px;
+    border: 1px solid grey;
     text-align: center;
     font-size: 24px;
     color:#ff7152;
-    margin: 25px auto;
+    margin:15px auto;
 }
 em{
     color:white;
 }
 .Abt_container{
-    /* border: 1px solid white; */
+    border: 1px solid white;
     position: relative;
     width:95%;
     display: flex;
@@ -485,7 +485,7 @@ em{
 }
 .Abt_container .card{
     position: relative;
-    max-width:380px;
+    max-width:370px;
     height: 215px;
     background:rgb(70, 60, 60);
     margin: 30px 10px;
@@ -496,11 +496,11 @@ em{
     transition: 0.3s ease-in-out;
 }
 .Abt_container .card:hover{
-    height: 575px;
+    height: 550px;
 }
 .Abt_container .card .imgBx{
     position: relative;
-    width: 325px;
+    width: 315px;
     height: 205px;
     top:-70px;
     left: 20px;
@@ -537,14 +537,23 @@ em{
     color: #ff7152;
     font-size: 18px;
 }
-
+#AboutUs .jour_box p{
+    width: 80%;
+    height: 250px;
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 24px;
+    color:#ff7152;
+    margin:15px auto;
+}
 
 /* Carousel Journey Section  */
 .slideshow{
+    border: 1px solid pink;
     margin:0 auto;
-    padding-top: 200px;
+    width:95%;
+    padding-top: 100px;
     height: 350px;
-    /* background-color : skyblue; */
     box-sizing: border-box;
 }
 .about{
