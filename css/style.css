@@ -47,6 +47,7 @@ body::before{
 #navbar{
     display: flex;
     align-items: center;
+    
     position: fixed;
     top: 0px;
     left: 0px;
@@ -72,6 +73,7 @@ body::before{
     opacity: 0.20;
     z-index: -1;
 }
+
 #navbar ul {
     display: flex;
     list-style: none;
@@ -126,9 +128,52 @@ body::before{
     width: 79px;
     padding: 0px 0px 0px 17px;
 }
+#navbar .btn{
+    color: white;
+    display: none;
+}
 #navbar ul li:hover > ul{
     display: block;
 }
+/*Mobile-view #navbar*/
+@media (max-width: 908px){
+    #navbar{
+        align-items: center;
+        flex-direction: column;
+        height: 133px;
+    }
+    #logo{
+        margin: 5px 4px -20px 4px;
+    }
+    #navbar .btn{
+        color: white;
+        display: block;
+    }
+    
+}
+@media (max-width: 652px){
+    #navbar ul li a {
+        font-size: 11px;
+        margin: 21px 0px 0px 0px;
+        padding: 1px 7px;
+    }
+    .welcome{
+        width: 342px;
+    }
+    .welcome #p1 {
+        font-size: 11px;
+    }
+    .welcome #p2 {
+        font-size: 65px;
+    }
+    .welcome #p3 {
+        font-size: 11px;
+    }
+    .welcome #p4{
+        font-size: 29px;
+    }
+}
+
 
 /*Welcome*/
 #home{
