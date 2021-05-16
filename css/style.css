@@ -68,7 +68,7 @@ body::before{
     position: absolute;
     height: 100%;
     width: 100%;
-    opacity: 0.30;
+    opacity: 0.20;
     z-index: -1;
 }
 #navbar ul {
