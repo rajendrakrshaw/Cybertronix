@@ -52,6 +52,7 @@ body::before{
     left: 0px;
     height: 75px;
     width: 100%;
+    z-index: 1;
 }
 #navbar h3 {
 
@@ -504,7 +505,6 @@ em{
     height: 205px;
     top:-70px;
     left: 20px;
-    z-index: 1;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
