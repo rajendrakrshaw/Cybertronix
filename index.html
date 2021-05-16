@@ -39,7 +39,8 @@
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
+    <!-- About Us Section Animation  -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
 
@@ -90,25 +91,24 @@
         <!-- Carousel -->
         <div class="imgcontainer">
             <div class="slideshowcontainer">
-                <div id="playpausebtn" onclick="playpauseslide()"></div>
                 <div class="leftArrow" onclick="plusSlides(-1)"> <span class="arrow arrowLeft"></span> </div>
                 <div class="rightArrow" onclick="plusSlides(1)"> <span class="arrow arrowRight"></span> </div>
-                <div class="captionholder"><p class="captiontext"></p></div>
                 <div class="imageholder">
-                    <img src="images/college.jpg" alt="college">
-                    <p class="captiontext">Techno India Hooghly</p>
+                    <img src="images/C1.jpg" alt="college">    
                 </div>
                 <div class="imageholder">
-                    <img src="images/spark.jpg" alt="spark quest">
-                    <p class="captiontext">Spark Quest 2.O</p>
+                    <img src="images/C2.jpg" alt="spark quest">
                 </div>
                 <div class="imageholder">
-                    <img src="images/verbena.jpeg" alt="Vcc">
-                    <p class="captiontext">Verbena Cultural Committee</p>
+                    <img src="images/C3.jpg" alt="Vcc">
                 </div>
                 <div class="imageholder">
-                    <img src="images/technologo.jpeg" alt="Techno Logo">
-                    <p class="captiontext">Techno Group Logo</p>
+                    <img src="images/C4.jpg" alt="Techno Logo">
+        
+                </div>
+                <div class="imageholder">
+                    <img src="images/C5.jpg" alt="Techno Logo">
+        
                 </div>
             </div>
             <div id="dotsContainer"></div>
@@ -158,63 +158,50 @@
                             }
                             </script>
                     </div>
-                    <div class="box">
-                        <img src="Images/download.jpg" alt="execution">
-                        <h3>Execution</h3>
-                        <p>From struggling to approach companies for sponsorship to getting permissions from the authorities - the journey from ideation to inception to execution was never a cakewalk. Virtual Event, the brainchild of many, started its journey in the year 2007 with the tagline “Think Beyond”. Every challenge, every adversity was the seed of opportunity and growth. The team with <span id="dots2">...</span><span id="more2"> their indomitable spirit brought in sponsors - a first in those times when all other fests completely relied on college funds. The fest was held on weekends to not disturb the normal college schedule with no access to infrastructure. Virtual Event had to rent its server, buy its own domain name (at a time when getting a credit card was not easy). After overcoming all the hurdles, the first website was launched at edg.co.in. As time proceeded, Virtual Event became a brand - a brand everyone looks up to now. The never-ending zeal to do better still continues.</p>
-                         <button type="button" id="read2" onclick="read2()">Read More</button>
+                    <div class="content">
+                        <h3>Commencement</h3>
+                        <p>The official Technology Club of Techno India Hooghly -<em>Cybertronix,</em> was established in August 2018. It was established to inspire young minds and to enrich the technical culture inside the College Campus and grow together. Cybertronix has been paving the way for bright and zealous enthusiasts of technology, helping them innovate and create all the while learning important management skills. </p>
                     </div>
-                     <script type="text/JavaScript">
-                            var i=0;
-                            function read2(){
-                                if(!i){
-                                    document.getElementById("more2").style.
-                                    display="inline";
-                                    document.getElementById("dots2").style.
-                                    display="none";
-                                    document.getElementById("read2").innerHTML="Read Less";
-                                    i=1;
-                                }
-                                else{
-                                   document.getElementById("more2").style.
-                                    display="none";
-                                    document.getElementById("dots2").style.
-                                    display="inline";
-                                    document.getElementById("read2").innerHTML="Read More";
-                                    i=0; 
-                                }
-                            }
-                            </script>
-
                 </div>
-                <div class="box2">
-                        <h3>Our Journey</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum ea, at autem ipsum temporibus qui est et deleniti repudiandae quasi velit optio nobis laudantium error atque reiciendis sapiente, tempore doloribus deserunt fuga voluptas voluptatem delectus perspiciatis. Nihil quos eum, provident suscipit laborum tempora esse quas dolore aliquam iure, consequuntur ad error ea eligendi eaque dolores consequatur facilis quam officia! Numquam quibusdam delectus esse, rerum voluptatibus temporibus voluptatem tempore, illum aspernatur, dolorum obcaecati excepturi dicta cumque provident? Exercitationem ipsam nulla repellat neque a repellendus iste aut hic eos deleniti, iusto rem?</p>
-                <div class="carousel">
-
-                    <div class="left" onclick="plusSlide(-1)"> <span class="arrow1 a_Left"></span> </div>
-                    <div class="right" onclick="plusSlide(1)"> <span class="arrow1 a_Right"></span> </div>
-                    <div class="ca_holder"><p class="ca_text"></p></div>
-                    <div class="imgholder">
-                        <img src="images/IMG-20210511-WA0006.jpg" alt="events">
-                        <p class="ca_text">Techno India Hooghly</p>
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/ideation.jpg" alt="">
                     </div>
-                    <div class="imgholder">
-                        <img src="images/IMG-20210511-WA0007.jpg" alt="events">
-                        <p class="ca_text">Spark Quest 2.O</p>
+                    <div class="content">
+                        <h3>Ideation</h3>
+                        <p>With the spirit, to help in growing the futuristic ideas of young minds the club Cybertronix is established and that's led to Spark Quest.The first-ever independent technological fest of our college in 2018. Support flourished through the young minds and Faculty Members making it possible for a first grand Virtual Event. The popularity led to the foundation of our very first website for <em>https://sparkquest.in</em></p>
                     </div>
-                    <div class="imgholder">
-                        <img src="images/IMG-20210511-WA0008.jpg" alt="events">
-                        <p class="ca_text">Verbena Cultural Committee</p>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/Execution.jpg" alt="">
                     </div>
-                    <div class="imgholder">
-                        <img src="images/IMG-20210511-WA0009.jpg" alt="events">
-                        <p class="ca_text">Techno Group Logo</p>
+                    <div class="content">
+                        <h2>Execution</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, minima unde? Temporibus fugit, quam tempora, quos repellendus, dolorem assumenda eaque illum maiores ex ad! Ex, earum. Similique iusto, reprehenderit atque, nesciunt quasi cupiditate temporibus commodi laborum illo ducimus repudiandae pariatur.</p>
                     </div>
-                    <script src="Carousel1.js"></script>
                 </div>
             </div>
-        </div>            
+            <div class="center">
+                <h2>Our Journey</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quia quibusdam eligendi cumque quas corporis sit cupiditate numquam modi quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur consectetur voluptatem voluptates eaque accusantium sapiente culpa nesciunt, possimus optio voluptatum adipisci animi nisi sunt veritatis deleniti maxime! Quaerat voluptate unde sed dignissimos quae aspernatur numquam vitae sint eligendi, nesciunt tenetur ratione fugiat magni exercitationem est iusto! Numquam quod corrupti deserunt!
+                </p>
+            </div>  
+            <section class="slideshow">
+                <div class="about">
+                    <div class="about-carrousel">
+                        <figure class="shadow"><img src="images/E1.jpg" alt=""></figure>
+                        <figure class="shadow"><img src="images/E2.jpg" alt=""></figure>
+                        <figure class="shadow"><img src="images/E3.jpg" alt=""></figure>
+                        <figure class="shadow"><img src="images/E4.jpg" alt=""></figure>
+                        <figure class="shadow"><img src="images/E5.jpg" alt=""></figure>
+                        <figure class="shadow"><img src="images/E6.jpg" alt=""></figure>
+                        <figure class="shadow"><img src="images/E7.jpg" alt=""></figure>
+                        <figure class="shadow"><img src="images/E8.jpg" alt=""></figure>                            <figure class="shadow"><img src="images/E9.jpg" alt=""></figure>
+                    </div>
+                </div>
+            </section> 
+        </div>         
     </section>
     <!--Activity-->
     <section id="Activity" class="animated animatedFadeInUp fadeInUp">
@@ -509,6 +496,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
     <script src="main.js"></script>
+    </div>
+    </section>
 </body>
 
 </html>
