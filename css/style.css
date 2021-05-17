@@ -195,7 +195,7 @@ body::before{
         z-index: -1;
     }
     #navbar ul li{
-        top: -10px;
+        top: -88px;
     }
     #navbar .icon-burger{
         display: block;
@@ -1363,10 +1363,3 @@ textarea.input {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
  }
- .footer-follow {
-    margin: auto;
-    text-align: center;
-    width: 50%;
-    
-    padding: 10px;
-  }
