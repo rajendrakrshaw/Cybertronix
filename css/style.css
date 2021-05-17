@@ -52,7 +52,7 @@ body::before{
     left: 0px;
     height: 75px;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
     justify-content: space-between;
 }
 #navbar h3 {
@@ -148,6 +148,7 @@ body::before{
     background: red;
     margin: 5px;
     border-radius: 3px;
+    transition: all .3s ease-in-out;
 }
 @media (max-width: 908px){
    /* #navbar{
@@ -168,18 +169,54 @@ body::before{
         margin: auto;
     }
     #navbar ul{
-        display: none;
+        z-index: 9;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 75px;
+        bottom: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+    #navbar ul::before{
+        content: "";
+        background-color: red ;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.20;
+        z-index: -1;
+    }
+    #navbar ul li{
+        top: -10px;
     }
     #navbar .icon-burger{
         display: block;
     }
+    #navbar :checked~ .icon-burger .line:nth-child(1){
+        transform: translateY(10px) rotate(225deg);
+    }
+    #navbar :checked~ .icon-burger .line:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    #navbar :checked~ .icon-burger .line:nth-child(2){
+        opacity: 0;
+    }
+    /*
+    #nav-toggle{
+        display: block;
+    }
+    */
+    #navbar :checked~ ul{
+        bottom: 0px;
+    }
 }
 @media (max-width: 652px){
-    #navbar ul li a {
-        font-size: 11px;
-        margin: 21px 0px 0px 0px;
-        padding: 1px 7px;
-    }
     .welcome{
         width: 342px;
     }
