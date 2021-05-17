@@ -35,7 +35,7 @@ body::before{
 #logo {
     margin: 0px 4px;
     padding: 0px 4px;
-    display: flex;
+    float: left;
 }
 #logo img {
     height: 60px;
@@ -47,7 +47,6 @@ body::before{
 #navbar{
     display: flex;
     align-items: center;
-    
     position: fixed;
     top: 0px;
     left: 0px;
@@ -57,8 +56,7 @@ body::before{
     justify-content: space-between;
 }
 #navbar h3 {
-
-    display: block;
+    float: right;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
@@ -128,16 +126,31 @@ body::before{
     width: 79px;
     padding: 0px 0px 0px 17px;
 }
-#navbar .btn{
-    color: white;
-    display: none;
-}
+
 #navbar ul li:hover > ul{
     display: block;
 }
-/*Mobile-view #navbar*/
+/*Mobile-view #navbar , navbar toggle*/
+#nav-toggle {
+    position: relative;
+    display: none;
+}
+#navbar .icon-burger{
+    position: relative;
+    display: none;
+    right: 0px;
+    top: 0px;
+    transform: translate(-50%);
+}
+#navbar .line {
+    width: 30px;
+    height: 5px;
+    background: red;
+    margin: 5px;
+    border-radius: 3px;
+}
 @media (max-width: 908px){
-    #navbar{
+   /* #navbar{
         align-items: center;
         flex-direction: column;
         height: 133px;
@@ -149,7 +162,17 @@ body::before{
         color: white;
         display: block;
     }
-    
+    */
+    #logo{
+        display: block;
+        margin: auto;
+    }
+    #navbar ul{
+        display: none;
+    }
+    #navbar .icon-burger{
+        display: block;
+    }
 }
 @media (max-width: 652px){
     #navbar ul li a {
