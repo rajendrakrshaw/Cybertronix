@@ -10,6 +10,7 @@ html{
     font-family: 'lato','Arial',sans-serif;
     font-weight:200;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 body{
     background-color: black;
@@ -19,6 +20,7 @@ body{
    /* position: relative;
     height: 7000px;
     width: 100%;*/
+    overflow-x: hidden;
 }
 /*
 body::before{
