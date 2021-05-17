@@ -173,7 +173,7 @@ body::before{
     #navbar ul{
         z-index: 9;
         position: fixed;
-        left: 0;
+        left: -18px;
         right: 0;
         top: 75px;
         bottom: 100%;
