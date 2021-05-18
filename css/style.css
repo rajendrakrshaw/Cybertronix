@@ -177,6 +177,11 @@ body::before{
         display: block;
     }
     */
+    #navbar::before{
+        background-color: red ;
+        opacity: 0.20;
+    
+    }
     #logo{
         display: block;
         margin: auto;
@@ -196,6 +201,7 @@ body::before{
         overflow: hidden;
         transition: all .5s ease-in-out;
     }
+
     #navbar ul::before{
         content: "";
         background-color: red ;
@@ -227,6 +233,11 @@ body::before{
     */
     #navbar :checked~ ul{
         bottom: 0px;
+    }
+    #navbar ul ul::before{
+        background-color: red;
+        opacity: 0.20;
+        z-index: -1;
     }
     
 }
