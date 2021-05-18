@@ -228,23 +228,7 @@ body::before{
     #navbar :checked~ ul{
         bottom: 0px;
     }
-}
-@media (max-width: 652px){
-    .welcome{
-        width: 342px;
-    }
-    .welcome #p1 {
-        font-size: 11px;
-    }
-    .welcome #p2 {
-        font-size: 65px;
-    }
-    .welcome #p3 {
-        font-size: 11px;
-    }
-    .welcome #p4{
-        font-size: 29px;
-    }
+    
 }
 
 
@@ -304,7 +288,7 @@ body::before{
     }
 }
 hr{
-    color: red;
+    color: white;
     
 }
 hr:not([size]) {
@@ -384,6 +368,26 @@ h1 span:nth-child(11){
         color: white;
     }
 }
+
+@media (max-width: 652px){
+    .welcome{
+        width: 342px;
+    }
+    .welcome #p1 {
+        font-size: 11px;
+        margin: 1px 0px -23px;
+    }
+    .welcome #p2 {
+        font-size: 65px;
+    }
+    .welcome #p3 {
+        font-size: 11px;
+    }
+    .welcome #p4{
+        font-size: 27px;
+    }
+}
+
 /* Carousel */
 .imgcontainer{
     width: 70%;
