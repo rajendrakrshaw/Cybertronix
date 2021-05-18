@@ -260,6 +260,7 @@ section{
 h1{
     font-size: 50px;
     text-align: center;
+    padding-top: 50px;
    /* box-shadow: 0 0 10px red;*/
 }
 
@@ -498,8 +499,8 @@ h1 span:nth-child(11){
 #AboutUs{
     width: 98%;
     height: 95%;
-    top: 0px;
-    border: 1px solid blue;
+    padding-top: 50px;
+    /* border: 1px solid blue; */
     display:block;
     margin: 10px auto;
 }
@@ -512,7 +513,7 @@ h1 span:nth-child(11){
 #AboutUs .center p{
     width: 80%;
     height: 155px;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     text-align: center;
     font-size: 24px;
     color:#ff7152;
@@ -522,7 +523,7 @@ em{
     color:white;
 }
 .Abt_container{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     position: relative;
     width:95%;
     display: flex;
@@ -543,9 +544,10 @@ em{
     flex-direction: column;
     box-shadow: 0 5px 202px rgb(255, 255, 255);
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 .Abt_container .card:hover{
-    height: 550px;
+    height: 580px;
 }
 .Abt_container .card .imgBx{
     position: relative;
@@ -588,7 +590,7 @@ em{
 #AboutUs .jour_box p{
     width: 80%;
     height: 250px;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     text-align: center;
     font-size: 24px;
     color:#ff7152;
@@ -597,7 +599,7 @@ em{
 
 /* Carousel Journey Section  */
 .slideshow{
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     margin:0 auto;
     width:95%;
     padding-top: 100px;
