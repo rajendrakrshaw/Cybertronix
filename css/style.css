@@ -377,8 +377,8 @@ h1 span:nth-child(11){
     width: 70%;
     height:550px;
     user-select: none;
-    background-color: gainsboro;
-    box-shadow: 0px 0px 3px 1px red;
+    background-color: #ab0c0c;
+    box-shadow:0 5px 102px rgb(255, 255, 255); 
     padding:10px;
     box-sizing: 10px;
     margin: -0 auto;
@@ -604,7 +604,7 @@ em{
     padding: 20px 7px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 202px rgb(255, 255, 255);
+    box-shadow: 0 5px 50px rgb(255, 255, 255);
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -659,7 +659,7 @@ em{
     margin:15px auto;
 }
 
-/* Carousel Journey Section  */
+/*3D Image Carrousel Journey Section  */
 .slideshow{
     /* border: 1px solid pink; */
     margin:0 auto;
@@ -679,7 +679,7 @@ em{
     width: 100%;
     position: absolute;
     float: right;
-    animation: rotar 15s infinite linear;
+    animation: rotar 25s infinite linear;
     transform-style: preserve-3d;
 }
 .about-carrousel:hover{
@@ -728,13 +728,13 @@ em{
 }
 .about-carrousel img{
     image-rendering: auto;
-    transition: all 300ms;
+    transition: all 1000ms;
     width: 100%;
     height: 100%;
 }
 .about-carrousel img:hover{
     transform: scale(1.2);
-    transition: all 300ms;
+    transition: all 1000ms;
 }
 @keyframes rotar{
     from{
