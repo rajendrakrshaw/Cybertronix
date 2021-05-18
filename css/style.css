@@ -22,6 +22,9 @@ body{
     width: 100%;*/
     overflow-x: hidden;
 }
+section .Heading{
+    font-family: Bai Jamjuree;
+}
 /*
 body::before{
     content:"";
@@ -63,6 +66,7 @@ body::before{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
     margin: 16px 0px 0px 12px;
+    font-family: Bai Jamjuree;
 }
 #navbar::before{
     content: "";
@@ -92,6 +96,7 @@ body::before{
     padding: 2px 14px;
     border: 2px solid transparent;
     text-decoration: none;
+    font-family: Bai Jamjuree;
 }
 
 #navbar ul li a:hover {
@@ -330,12 +335,14 @@ h1{
     font-size: 50px;
     text-align: center;
     padding-top: 50px;
+    
    /* box-shadow: 0 0 10px red;*/
 }
 
 h1 span{
     text-transform: uppercase;
     animation: animateH 2s linear infinite;
+    font-family: Bai Jamjuree;
 }
 h1 span:nth-child(1){
     animation-delay: 0s; 
