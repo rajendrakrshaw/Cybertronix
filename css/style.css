@@ -248,6 +248,7 @@ body::before{
     font-family: 'Baloo Bhai 2', cursive;
     width: 401px;
     display: block;
+    
     margin: 200px auto;
     flex-direction: column;
     align-items: center;
@@ -1373,3 +1374,15 @@ textarea.input {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
  }
+
+
+ .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 1;
+  }
+  
