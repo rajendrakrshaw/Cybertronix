@@ -10,6 +10,7 @@ html{
     font-family: 'lato','Arial',sans-serif;
     font-weight:200;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 body{
     background-color: black;
@@ -19,6 +20,7 @@ body{
    /* position: relative;
     height: 7000px;
     width: 100%;*/
+    overflow-x: hidden;
 }
 /*
 body::before{
@@ -35,7 +37,7 @@ body::before{
 #logo {
     margin: 0px 4px;
     padding: 0px 4px;
-    display: flex;
+    float: left;
 }
 #logo img {
     height: 60px;
@@ -47,18 +49,16 @@ body::before{
 #navbar{
     display: flex;
     align-items: center;
-    
     position: fixed;
     top: 0px;
     left: 0px;
     height: 75px;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
     justify-content: space-between;
 }
 #navbar h3 {
-
-    display: block;
+    float: right;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
@@ -128,16 +128,32 @@ body::before{
     width: 79px;
     padding: 0px 0px 0px 17px;
 }
-#navbar .btn{
-    color: white;
-    display: none;
-}
+
 #navbar ul li:hover > ul{
     display: block;
 }
-/*Mobile-view #navbar*/
+/*Mobile-view #navbar , navbar toggle*/
+#nav-toggle {
+    position: relative;
+    display: none;
+}
+#navbar .icon-burger{
+    position: relative;
+    display: none;
+    right: 0px;
+    top: 0px;
+    transform: translate(-50%);
+}
+#navbar .line {
+    width: 30px;
+    height: 5px;
+    background: red;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
 @media (max-width: 908px){
-    #navbar{
+   /* #navbar{
         align-items: center;
         flex-direction: column;
         height: 133px;
@@ -149,14 +165,60 @@ body::before{
         color: white;
         display: block;
     }
-    
+    */
+    #logo{
+        display: block;
+        margin: auto;
+    }
+    #navbar ul{
+        z-index: 9;
+        position: fixed;
+        left: -18px;
+        right: 0;
+        top: 75px;
+        bottom: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+    #navbar ul::before{
+        content: "";
+        background-color: red ;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.20;
+        z-index: -1;
+    }
+    #navbar ul li{
+        top: -88px;
+    }
+    #navbar .icon-burger{
+        display: block;
+    }
+    #navbar :checked~ .icon-burger .line:nth-child(1){
+        transform: translateY(10px) rotate(225deg);
+    }
+    #navbar :checked~ .icon-burger .line:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    #navbar :checked~ .icon-burger .line:nth-child(2){
+        opacity: 0;
+    }
+    /*
+    #nav-toggle{
+        display: block;
+    }
+    */
+    #navbar :checked~ ul{
+        bottom: 0px;
+    }
 }
 @media (max-width: 652px){
-    #navbar ul li a {
-        font-size: 11px;
-        margin: 21px 0px 0px 0px;
-        padding: 1px 7px;
-    }
     .welcome{
         width: 342px;
     }
@@ -1200,7 +1262,14 @@ textarea.input {
         color: #fff;
         background-color: #a10909;
     }
-
+    .footer-follow {
+        margin-left: 50%;
+        text-align: center;
+        width: 50%;
+        
+        padding: 10px;
+      }
+      
 
 
 
@@ -1249,22 +1318,23 @@ textarea.input {
 #myBtn {
     display: none;
     position:fixed;
-    margin-top:40%;
-    margin-left:90%;
+    top:58%;
+    left:85%;
     z-index:99;
     text-align: center;
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.233);
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 40px;
+    border-radius: 50%;
   }
   
   #myBtn:hover {
     background-color: #555;
+    opacity: 50%;
   }
   /* ANIMATION TOP BUTTON */
   .animated2 {
