@@ -28,7 +28,7 @@
     <!-- Cybertronix CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="screen and (max-width:902px)" href="css/mobile.css">
-
+    <script src="show-on-scroll.js"></script>
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -72,9 +72,17 @@
     
     <!--Home-->
     <section id="Home">
+        <div class="row">
+            <a href="#" class="intro-banner-vdo-play-btn pinkBg" target="_blank">
+        <i class="glyphicon glyphicon-play whiteText" aria-hidden="true"><i class="fas fa-bell" style="color:black;"></i>
+        <span class="ripple pinkBg"><i class="fas fa-bell" style="color:black;"></i></i></span>
+        <span class="ripple pinkBg"><i class="fas fa-bell" style="color:black;"></i></span>
+        <span class="ripple pinkBg"><i class="fas fa-bell" style="color:black;"></i></span>
+        </a>
+            </div>
         <div id="particles-js" style="height: 600px;" >  
 
-            <div class="welcome overlay">
+            <div class="welcome overlay ">
                 <p id="p1">WELCOME TO</p>
                 <p data-text="CYBERTRONIX" id="p2">
                     CYBERTRONIX
@@ -171,13 +179,13 @@
         </div>         
     </section>
     <!--Activity-->
-    <section id="Activity" class="animated animatedFadeInUp fadeInUp">
+    <section id="Activity" >
         <h1 class="Heading">
             <span>A</span><span>c</span><span>t</span><span>i</span><span>v</span><span>i</span><span>t</span><span>y</span>
         </h1>
 
         <!-- We at TIH Part-->
-        <div class="container my-5" style="padding-top: 30px; padding-bottom:10%;">
+        <div class="container my-5 " style="padding-top: 30px; padding-bottom:10%;">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
                     <h1 class=" display-4 fw-bold lh-1" style="color: red; padding-bottom:40px">We at TIH live with
@@ -386,7 +394,6 @@
 
     <!-- TOP BUTTON -->
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="animated2 fadeInRight"><i class="fas fa-fighter-jet fa-rotate-270"></i></button>
-
     <!-- FOOTER -->
     <div class="bg-red py-6">
         <div class="row px-3">
@@ -450,6 +457,12 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
+
+
+
+
+
+
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
