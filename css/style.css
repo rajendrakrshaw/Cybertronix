@@ -389,20 +389,27 @@ h1 span:nth-child(11){
 
 @media (max-width: 652px){
     .welcome{
-        width: 342px;
+        width: 336px;
     }
     .welcome #p1 {
-        font-size: 11px;
-        margin: 1px 0px -23px;
+        font-size: 18px;
+        margin: 0px 0px -21px;
     }
     .welcome #p2 {
-        font-size: 65px;
+        font-size: 64px;
+    }
+    .welcome #p2::before {
+        height: 101%;
     }
     .welcome #p3 {
-        font-size: 11px;
+        font-size: 15px;
+        margin: -21px 0px -12px;
     }
     .welcome #p4{
         font-size: 27px;
+    }
+    hr:not([size]) {
+        margin-top: -35px;
     }
 }
 
