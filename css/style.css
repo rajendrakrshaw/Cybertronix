@@ -1423,4 +1423,7 @@ textarea.input {
     right: 0;
     z-index: 1;
   }
+  #particles-js{
+      color:red;
+  }
   
