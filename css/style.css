@@ -164,7 +164,7 @@ body::before{
     display: none;
     top: 82px;
   
-    width: 160px;
+    width: 260px;
     margin: 0px 0px 0px -24px;
 }
 #navbar ul ul::before{
@@ -184,8 +184,8 @@ body::before{
 #navbar ul ul li a{
     color: white;
     background: transparent;
-    margin: 6px 0px 0px 7px;
-    width: 79px;
+    margin: 12px 0px 0px 5px;
+    width: 200px;
     padding: 0px 0px 0px 17px;
 }
 
@@ -700,7 +700,7 @@ em{
     cursor: pointer;
 }
 .Abt_container .card:hover{
-    height: 615px;
+    height: 700px;
 }
 .Abt_container .card .imgBx{
     position: relative;
@@ -718,6 +718,15 @@ em{
     width: 350px;
     max-width: 100%;
     border-radius: 15px;
+}
+.Abt_container .card .imgBx h2{
+    color:red;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10%;
+}
+.Abt_container .card:hover .imgBx h2{
+    visibility:hidden;
 }
 .Abt_container .card .content{
     position: relative;
@@ -1360,8 +1369,8 @@ textarea.input {
         background-color: #a10909;
     }
     .footer-follow {
-        margin-left: 50%;
-        text-align: center;
+        margin-top: 0;
+        text-align:left;
         width: 50%;
         
         padding: 10px;
@@ -1417,22 +1426,23 @@ textarea.input {
 #myBtn {
     display: none;
     position:fixed;
-    top:60%;
-    left:85%;
+    top:70%;
+    left:93%;
     z-index:99;
     text-align: center;
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgba(255, 0, 0, 0.233);
-    color: white;
+    background-color: white;
+    color: #000;
     cursor: pointer;
     padding: 15px;
     border-radius: 50%;
   }
   
   #myBtn:hover {
-    background-color: #555;
+    background-color: #000;
+    color: red;
     opacity: 50%;
   }
   /* ANIMATION TOP BUTTON */
@@ -1491,20 +1501,20 @@ textarea.input {
 
 }
 .intro-banner-vdo-play-btn{
-    height:60px;
-    width:60px;
+    height:50px;
+    width:50px;
     position:absolute;
-    top:22%;
+    top:63%;
     position:fixed;
-    left:2%;
+    left:3%;
     text-align:center;
     margin:-30px 0 0 -30px;
     border-radius:100px;
     z-index:1
 }
 .intro-banner-vdo-play-btn i{
-    line-height:56px;
-    font-size:30px
+    line-height:50px;
+    font-size:26px
 }
 .intro-banner-vdo-play-btn .ripple{
     position:absolute;
