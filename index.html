@@ -41,7 +41,11 @@
     <title>Welcome to Cybertronix | Cybertronix.in</title>
 </head>
 
-<body>
+<body onload="loaderFun()">
+    <!--Pre:loader-->
+    <div id="loader_bg">
+        <div class="loader"></div>
+    </div>
     <!--NavBar-->
     <nav id="navbar">
         <!--This is Navigation Bar-->
@@ -498,6 +502,18 @@
     <script src="main.js"></script>
     </div>
     </section>
+    <!--Pre-Loader Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      /*  setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);*/
+        var preloader = document.getElementById('loader_bg');
+        setTimeout(function loaderFun(){
+            preloader.style.display = 'none';
+        }, 1000);
+        
+    </script>
 </body>
 
 </html>
