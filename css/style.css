@@ -609,12 +609,14 @@ h1 span:nth-child(11){
     /* border: 1px solid blue; */
     display:block;
     margin: 10px auto;
+  
 }
 #AboutUs .center h2, #AboutUs .jour_box h2{
     text-align: center;
     font-size: 45px;
     color:white;
     margin: 25px auto;
+    
 }
 #AboutUs .center p{
     width: 80%;
@@ -624,6 +626,7 @@ h1 span:nth-child(11){
     font-size: 24px;
     color:red;
     margin:15px auto;
+    font-family: Bai Jamjuree;
 }
 em{
     color:white;
@@ -697,6 +700,7 @@ em{
 .Abt_container .card .content p{
     color:red;
     font-size: 18px;
+    font-family: Bai Jamjuree;
 }
 #AboutUs .jour_box p{
     width: 80%;
@@ -706,6 +710,7 @@ em{
     font-size: 24px;
     color:red;
     margin:15px auto;
+    font-family: Bai Jamjuree;
 }
 
 /*3D Image Carrousel Journey Section  */
