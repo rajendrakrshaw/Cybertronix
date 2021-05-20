@@ -89,7 +89,7 @@ body::before{
 #logo img {
     height: 60px;
     margin: 0px;
-    border: 1px solid rgb(71, 70, 70);
+    border: 1px solid transparent;
     border-radius: 50%;
 }
 
@@ -338,6 +338,13 @@ body::before{
     overflow: hidden;
     animation: animate 4s linear infinite;
 }
+.underline {
+    height: 3px;
+    width: 401px;
+    background: white;
+    margin: -37px 0px 0px 0px;
+    border: 1px solid red;
+}
 
 @keyframes animate {
     0%,10%,100%{
@@ -347,23 +354,16 @@ body::before{
         width: 100%;
     }
 }
-hr{
-    color: white;
-    
-}
-hr:not([size]) {
-    height: 3px;
-   margin-top: -39px;
-   margin-bottom: 21px;
-}
+
 .welcome #p3 {
     font-weight: bold;
     font-size: 15px;
-    margin: -23px 0px -12px;
+    margin: 1px 0px -2px;
 }
-.welcome #p4{
+.welcome #p4 {
     font-weight: bold;
     font-size: 32px;
+    margin: -11px 0px 0px 0px;
 }
 
 section{
@@ -446,14 +446,15 @@ h1 span:nth-child(11){
         height: 101%;
     }
     .welcome #p3 {
-        font-size: 15px;
-        margin: -21px 0px -12px;
+        font-size: 16px;
+        margin: -1px 0px 0px;
     }
     .welcome #p4{
         font-size: 27px;
     }
-    hr:not([size]) {
-        margin-top: -35px;
+    .underline {
+        width: 336px;
+        margin: -35px 0px 0px 0px;
     }
 }
 
@@ -721,9 +722,10 @@ em{
 }
 .Abt_container .card .imgBx h2{
     color:red;
-    font-size: 35px;
+    font-size: 28px;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 14%;
+    font-family:  Bai Jamjuree;
 }
 .Abt_container .card:hover .imgBx h2{
     visibility:hidden;
@@ -747,7 +749,7 @@ em{
 }
 .Abt_container .card .content h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     color:white;
 }
 .Abt_container .card .content p{
