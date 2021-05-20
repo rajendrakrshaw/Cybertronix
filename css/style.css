@@ -1368,7 +1368,7 @@ textarea.input {
 #myBtn {
     display: none;
     position:fixed;
-    top:58%;
+    top:60%;
     left:85%;
     z-index:99;
     text-align: center;
@@ -1503,3 +1503,30 @@ textarea.input {
     animation-delay:.6s;
     -webkit-animation-delay:.6s
 }
+
+/* MODAL */
+.modal{
+    opacity:90%;
+}
+.modal-body {
+    background-color:black;
+    border:collapse;
+
+   
+}
+.modal-header{
+    background-color:#000;
+    color: wheat;
+    border: collapse;
+}
+.modal-footer{
+    background-color: #000;
+    color: wheat;
+}
+.center-modal-img {
+    margin: auto;
+    display: block;
+    width: 350px;
+    height: 60%;
+    max-width: 700px;
+  }
