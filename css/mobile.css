@@ -130,6 +130,19 @@ em{
     margin: 70px 20px;
 }
 
+/* MODAL POSTPONDED */
+.modaltext{
+    color: #e60000; 
+    display:inline-block;
+    height:50px;
+    position: absolute;
+     font-size: 40px; 
+     left: 22%;
+
+
+}
+
+
 /*
 .ContainerOfLeaders{
     flex-direction: column;
