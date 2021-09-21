@@ -29,7 +29,7 @@ window.addEventListener('scroll', ()=>{
     navLiA.forEach( a =>{
         a.classList.remove('active');
         if(a.classList.contains(current)){
-            console.log(current);
+            //console.log(current);
             a.classList.add('active');
         }
     })

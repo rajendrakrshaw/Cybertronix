@@ -53,10 +53,10 @@ function moveSlide(n) {
         dots[n].classList.add("active");
         slideIndex=n;
     }
-    captiontext.style.display="none";
-    captiontext.className="captiontext"+slideTextAnimeClasses;
-    captiontext.innertext=slide[n].querySelector(".captiontext").innertext;
-    captiontext.style.display="block";
+    //captiontext.style.display="none";
+    //captiontext.className="captiontext"+slideTextAnimeClasses;
+    //captiontext.innertext=slide[n].querySelector(".captiontext").innertext;
+    //captiontext.style.display="block";
 }
 
 var timer=null;
